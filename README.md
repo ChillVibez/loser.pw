@@ -1,2 +1,0 @@
-# loser.pw
-loser.pw 
