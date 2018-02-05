@@ -61,17 +61,16 @@
         var currentTime = new Date(),
             hours = currentTime.getHours(),
             minutes = currentTime.getMinutes();
-        seconds = currentTime.getSeconds();
+        if (hours < 24) {
+            hours = hours - "12" ;
+	    }
         if (minutes < 10) {
             minutes = "0" + minutes;
-        }
-        if (seconds < 10) {
-            seconds = "0" + seconds;
         }
 
         var clock_element = document.getElementById("clock");
 
-        clock_element.innerHTML = hours + " : " + minutes + " : " + seconds;
+        clock_element.innerHTML = hours + " : " + minutes;
     }
     setInterval(update_clock, 1000);
 
