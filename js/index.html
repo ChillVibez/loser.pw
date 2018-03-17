@@ -1,0 +1,82 @@
+ <style type="text/css">
+    body,
+    a:hover {
+        cursor: url(cursor.ani), progress !important;
+    }
+
+</style><a href="https://www.cursors-4u.com/cursor/2005/05/05/sym46.html" target="_blank"></a>
+ <title>loser gang</title>
+ <script src="title.js"></script>
+
+ <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+ </head>
+
+ <head>
+     <link rel="shortcut icon" type="image/x-icon" href="faticon.ico" />
+ </head>
+
+ <body>
+     <link rel="stylesheet" type="text/css" href="stars.css" />
+     <link rel="stylesheet" href="animate.css" />
+     <link href="style.css" rel="stylesheet" width="200px" height="200px" />
+     <span class="outer">
+ <span class="middle">
+ <span class="inner">
+ <div class="animated fadeInUp" ;="" opacity:="" 0.1=""><pre style="font-size: 7px"><h1><a title="Steam Group" href="https://steamcommunity.com/groups/Iosergang">lo$er</a></h1>
+ </pre>
+ <div class="animated fadeIn2">
+					   <pre>[ <font size="2"><marquee width="240px" scrollamount="5" vspace="0px" height="10">
+                       <a href="http://steamcommunity.com/profiles/76561197960592738" target="_blank">fanta </a> - 
+                       <a href="http://steamcommunity.com/profiles/76561198366555997" target="_blank">cole </a> - 
+                       <a href="http://steamcommunity.com/profiles/76561198085052512" target="_blank">ayy </a> -
+					   <a>we 1 tapped trax</a></marquee></font>]
+ </pre></div>
+ </div>
+ <div class="animated fadeIn2"><center><span class="sub_text2" id="clock"></span></center></div>
+     
+     </div> 
+     <div class="overlay"></div>
+     </span>
+     </span>
+     </span>
+
+ </body>
+
+ <audio autoplay="" loop="" id="player">
+		 <source src="1tap.mp3">
+		 <script>
+		var audio = document.currentScript.parentElement;
+		audio.volume = 0.27;
+		</script>
+		 </source></audio>
+
+ <script>
+    update_clock();
+
+    function update_clock() {
+        var currentTime = new Date(),
+            hours = currentTime.getHours(),
+            minutes = currentTime.getMinutes();
+        if (hours > 12) {
+            hours = hours - "12" ;
+	    }
+		
+		if (hours < 12) {
+		    hours = hours;
+			
+	    }
+		
+        if (minutes < 10) {
+            minutes = "0" + minutes;
+        }
+
+        var clock_element = document.getElementById("clock");
+
+        clock_element.innerHTML = hours + " : " + minutes;
+    }
+    setInterval(update_clock, 1000);
+
+</script>
